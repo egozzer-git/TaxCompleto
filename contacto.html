@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contacto — Latino Tax Service</title>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=EB+Garamond:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<a href="#main" class="skip-link" data-i18n="skip">Saltar al contenido</a>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo">
+      <span class="logo-main">Latino Tax Service</span>
+      <span class="logo-sub">Enrique Gozzer, EA — Founder</span>
+    </a>
+    <nav class="nav-desktop">
+      <ul class="nav-list">
+        <li><a href="index.html" data-i18n="nav_home">Inicio</a></li>
+        <li><a href="historia.html" data-i18n="nav_story">Nuestra Historia</a></li>
+        <li><a href="servicios.html" data-i18n="nav_services">Servicios</a></li>
+        <li><a href="precios.html" data-i18n="nav_pricing">Precios</a></li>
+        <li><a href="pagos.html" data-i18n="nav_payments">Pagos</a></li>
+        <li><a href="contacto.html" data-i18n="nav_contact">Contacto</a></li>
+        <li><a href="#" class="lang-toggle" style="font-weight:700;">🌐 <span class="lang-current">ES</span></a></li>
+        <li><a href="portal.html" data-i18n="nav_portal">Portal</a></li>
+      </ul>
+    </nav>
+    <button class="mobile-toggle" aria-label="Menú">☰</button>
+  </div>
+</header>
+
+<main id="main">
+
+<section class="hero page-hero">
+  <div class="container text-center">
+    <h1 data-i18n="contact_hero">Agenda tu consulta gratuita</h1>
+    <p style="color:#c8d5ed; font-size:1rem;" data-i18n="contact_sub">15 minutos, sin compromiso.</p>
+    <div style="margin-top:1.25rem;">
+      <span class="badge">✅ <span data-i18n="contact_tag1">Presencial en White Plains</span></span>
+      <span class="badge">✅ <span data-i18n="contact_tag2">Por teléfono</span></span>
+      <span class="badge">✅ <span data-i18n="contact_tag3">Por videollamada (todo USA)</span></span>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="grid grid-2" style="gap:2.5rem;">
+      <div>
+        <h2 data-i18n="contact_form_title">Cuéntanos sobre tu caso</h2>
+        <form id="contact-form" action="https://api.web3forms.com/submit" method="POST" novalidate>
+          <input type="hidden" name="access_key" value="TU_ACCESS_KEY">
+          <input type="hidden" name="subject" value="Consulta desde latinotaxservice.com">
+          <input type="checkbox" name="botcheck" style="display:none">
+
+          <div class="form-group">
+            <label for="name" data-i18n="contact_name">Nombre completo *</label>
+            <input type="text" id="name" name="name" required>
+            <span class="form-error">Este campo es obligatorio.</span>
+          </div>
+          <div class="form-group">
+            <label for="email" data-i18n="contact_email">Email *</label>
+            <input type="email" id="email" name="email" required>
+            <span class="form-error">Ingresa un email válido.</span>
+          </div>
+          <div class="form-group">
+            <label for="phone" data-i18n="contact_phone">Teléfono *</label>
+            <input type="tel" id="phone" name="phone" required>
+            <span class="form-error">Este campo es obligatorio.</span>
+          </div>
+          <div class="form-group">
+            <label data-i18n="contact_service">¿Qué servicio necesitas? *</label>
+            <div class="radio-group">
+              <label><input type="radio" name="service" value="personal" required> Personal</label>
+              <label><input type="radio" name="service" value="business"> Business</label>
+              <label><input type="radio" name="service" value="itin"> ITIN</label>
+              <label><input type="radio" name="service" value="bookkeeping"> Bookkeeping</label>
+              <label><input type="radio" name="service" value="irs"> IRS</label>
+              <label><input type="radio" name="service" value="other"> Other</label>
+            </div>
+          </div>
+          <div class="form-group">
+            <label data-i18n="contact_mode">¿Cómo prefieres la consulta? *</label>
+            <div class="radio-group">
+              <label><input type="radio" name="mode" value="office" required> Office</label>
+              <label><input type="radio" name="mode" value="phone"> Phone</label>
+              <label><input type="radio" name="mode" value="video"> Video</label>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="message" data-i18n="contact_message">Cuéntanos brevemente tu situación</label>
+            <textarea id="message" name="message" rows="4"></textarea>
+          </div>
+          <div class="form-group">
+            <label class="checkbox-label"><input type="checkbox" name="privacy" required> <span data-i18n="contact_privacy">Acepto la política de privacidad</span></label>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width:100%;" data-i18n="contact_submit">AGENDAR MI CONSULTA GRATUITA</button>
+          <p class="text-muted" style="font-size:0.8rem; margin-top:0.85rem; text-align:center;" data-i18n="contact_secure">🔒 Tus datos están protegidos.</p>
+        </form>
+      </div>
+      <div>
+        <div class="card contact-info">
+          <h3 data-i18n="contact_info">Información de contacto</h3>
+          <p><strong data-i18n="contact_addr">Dirección</strong><br>123 Main Street<br>White Plains, NY 10601</p>
+          <p><strong>Teléfono</strong><br>(914) 000-0000</p>
+          <p><strong>Email</strong><br>info@latinotaxservice.com</p>
+          <p><strong data-i18n="contact_sched">Horario</strong><br>Lun-Vie: 9am - 6pm</p>
+          <p style="margin-top:1.5rem;"><span data-i18n="contact_client">¿Ya eres cliente?</span> <a href="portal.html"><strong data-i18n="contact_login">Iniciar sesión</strong></a></p>
+        </div>
+        <div class="img-placeholder" style="margin-top:1.75rem;">[ Mapa ]</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="disclaimer">Enrique Gozzer is an Enrolled Agent enrolled to practice before the Internal Revenue Service. Latino Tax Service does not provide legal advice.</div>
+    <p style="margin-top:0.85rem; color:#7AA0D9; font-size:0.75rem;">© <span id="year">2025</span> Latino Tax Service.</p>
+  </div>
+</footer>
+
+<script src="js/i18n.js"></script>
+<script src="js/main.js"></script>
+<script src="js/form.js"></script>
+</body>
+</html>

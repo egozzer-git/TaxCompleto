@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portal — Latino Tax Service</title>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=EB+Garamond:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<a href="#main" class="skip-link" data-i18n="skip">Saltar al contenido</a>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo">
+      <span class="logo-main">Latino Tax Service</span>
+      <span class="logo-sub">Enrique Gozzer, EA — Founder</span>
+    </a>
+    <nav class="nav-desktop">
+      <ul class="nav-list">
+        <li><a href="index.html" data-i18n="nav_home">Inicio</a></li>
+        <li><a href="historia.html" data-i18n="nav_story">Nuestra Historia</a></li>
+        <li><a href="servicios.html" data-i18n="nav_services">Servicios</a></li>
+        <li><a href="precios.html" data-i18n="nav_pricing">Precios</a></li>
+        <li><a href="pagos.html" data-i18n="nav_payments">Pagos</a></li>
+        <li><a href="contacto.html" data-i18n="nav_contact">Contacto</a></li>
+        <li><a href="#" class="lang-toggle" style="font-weight:700;">🌐 <span class="lang-current">ES</span></a></li>
+      </ul>
+    </nav>
+    <button class="mobile-toggle" aria-label="Menú">☰</button>
+  </div>
+</header>
+
+<main id="main">
+
+<section class="hero page-hero">
+  <div class="container text-center">
+    <h1 data-i18n="portal_hero">Portal de Clientes</h1>
+    <p style="color:#c8d5ed;" data-i18n="portal_sub">Accede de forma segura para subir documentos, firmar y pagar.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="grid grid-2" style="gap:2.5rem;">
+      <div class="card">
+        <h2 data-i18n="portal_login">Iniciar sesión</h2>
+        <p class="text-muted" data-i18n="portal_login_sub">Si ya eres cliente, accede aquí.</p>
+        <form onsubmit="event.preventDefault(); window.location.href='#';">
+          <div class="form-group"><label for="login-email">Email</label><input type="email" id="login-email" required></div>
+          <div class="form-group"><label for="login-pass" data-i18n="portal_password">Contraseña</label><input type="password" id="login-pass" required></div>
+          <button type="submit" class="btn btn-primary" style="width:100%;" data-i18n="portal_login">Iniciar sesión</button>
+        </form>
+        <p style="margin-top:0.85rem;"><a href="#" data-i18n="portal_forgot">¿Olvidaste tu contraseña?</a></p>
+        <p class="text-muted" style="font-size:0.75rem;" data-i18n="portal_secure">🔒 Conexión segura con cifrado SSL</p>
+      </div>
+      <div class="card" style="background:var(--gray-light);">
+        <h2 data-i18n="portal_register">Crear cuenta</h2>
+        <p class="text-muted" data-i18n="portal_register_sub">¿Nuevo cliente? Regístrate para comenzar.</p>
+        <form onsubmit="event.preventDefault(); window.location.href='#';">
+          <div class="form-group"><label data-i18n="contact_name">Nombre completo</label><input type="text" required></div>
+          <div class="form-group"><label>Email</label><input type="email" required></div>
+          <div class="form-group"><label data-i18n="contact_phone">Teléfono</label><input type="tel" required></div>
+          <div class="form-group"><label data-i18n="portal_password">Contraseña</label><input type="password" required></div>
+          <div class="form-group"><label class="checkbox-label"><input type="checkbox" required> <span data-i18n="contact_privacy">Acepto términos</span></label></div>
+          <button type="submit" class="btn btn-primary" style="width:100%;" data-i18n="portal_create">Crear cuenta</button>
+        </form>
+        <div style="margin-top:1.25rem; font-size:0.82rem; color:var(--text-muted);">
+          <p>✅ <span data-i18n="portal_2fa">Verificación en dos pasos</span></p>
+          <p>✅ <span data-i18n="portal_crypto">Documentos cifrados</span></p>
+          <p>✅ <span data-i18n="portal_esign">Firma electrónica</span></p>
+        </div>
+      </div>
+    </div>
+    <p class="text-center text-muted" style="margin-top:2.5rem;" data-i18n="portal_note">Este portal es administrado por nuestro proveedor seguro.</p>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="disclaimer">Enrique Gozzer is an Enrolled Agent enrolled to practice before the Internal Revenue Service. Latino Tax Service does not provide legal advice.</div>
+    <p style="margin-top:0.85rem; color:#7AA0D9; font-size:0.75rem;">© <span id="year">2025</span> Latino Tax Service.</p>
+  </div>
+</footer>
+
+<script src="js/i18n.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

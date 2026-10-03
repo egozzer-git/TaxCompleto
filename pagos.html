@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pagos — Latino Tax Service</title>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=EB+Garamond:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<a href="#main" class="skip-link" data-i18n="skip">Saltar al contenido</a>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo">
+      <span class="logo-main">Latino Tax Service</span>
+      <span class="logo-sub">Enrique Gozzer, EA — Founder</span>
+    </a>
+    <nav class="nav-desktop">
+      <ul class="nav-list">
+        <li><a href="index.html" data-i18n="nav_home">Inicio</a></li>
+        <li><a href="historia.html" data-i18n="nav_story">Nuestra Historia</a></li>
+        <li><a href="servicios.html" data-i18n="nav_services">Servicios</a></li>
+        <li><a href="precios.html" data-i18n="nav_pricing">Precios</a></li>
+        <li><a href="pagos.html" data-i18n="nav_payments">Pagos</a></li>
+        <li><a href="contacto.html" data-i18n="nav_contact">Contacto</a></li>
+        <li><a href="#" class="lang-toggle" style="font-weight:700;">🌐 <span class="lang-current">ES</span></a></li>
+        <li><a href="portal.html" data-i18n="nav_portal">Portal</a></li>
+      </ul>
+    </nav>
+    <button class="mobile-toggle" aria-label="Menú">☰</button>
+  </div>
+</header>
+
+<main id="main">
+
+<section class="hero page-hero">
+  <div class="container text-center">
+    <h1 data-i18n="pay_hero">Pagos en línea seguros</h1>
+    <p style="color:#c8d5ed;" data-i18n="pay_sub">Para clientes presenciales y remotos en todo Estados Unidos.</p>
+    <div style="margin-top:1.25rem;">
+      <span class="badge">🔒 <span data-i18n="pay_ssl">Cifrado SSL</span></span>
+      <span class="badge">💳 <span data-i18n="pay_stripe">Stripe</span></span>
+      <span class="badge">✅ <span data-i18n="pay_receipt">Recibo por email</span></span>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2 class="text-center mb-4" data-i18n="pay_choose">Elige el tipo de pago</h2>
+    <p class="text-center text-muted mb-4" data-i18n="pay_choose_sub">Los pagos son procesados de forma segura por Stripe.</p>
+    <div class="grid grid-3">
+      <div class="card price-card">
+        <div class="card-icon">💬</div>
+        <h3 data-i18n="pay_consult">Consulta</h3>
+        <div class="price-amount">$50</div>
+        <ul class="price-features"><li>✅ 30 min</li><li>✅ Review</li><li>✅ Quote</li><li>✅ Credited</li></ul>
+        <a href="#" class="btn btn-outline" onclick="alert('Stripe Payment Link se conectará aquí.'); return false;" data-i18n="pay_btn_consult">Pagar consulta</a>
+      </div>
+      <div class="card price-card card-featured">
+        <p class="featured-tag" data-i18n="price_popular">MÁS USADO</p>
+        <div class="card-icon">📋</div>
+        <h3 data-i18n="pay_deposit">Depósito de servicio</h3>
+        <div class="price-amount">$150</div>
+        <ul class="price-features"><li>✅ Booking</li><li>✅ Applied to total</li><li>✅ Refundable 48h</li><li>✅ Faster filing</li></ul>
+        <a href="#" class="btn btn-primary" onclick="alert('Stripe Payment Link se conectará aquí.'); return false;" data-i18n="pay_btn_deposit">Pagar depósito</a>
+      </div>
+      <div class="card price-card">
+        <div class="card-icon">💵</div>
+        <h3 data-i18n="pay_full">Pago completo</h3>
+        <div class="price-amount" data-i18n="pay_full_amount">Personalizado</div>
+        <ul class="price-features"><li>✅ Custom amount</li><li>✅ Instant receipt</li><li>✅ For active clients</li><li>✅ Multiple methods</li></ul>
+        <a href="#" class="btn btn-outline" onclick="alert('Stripe Payment Link se conectará aquí.'); return false;" data-i18n="pay_btn_full">Pagar ahora</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section bg-cream">
+  <div class="container narrow">
+    <h2 class="text-center mb-4">¿Cómo funciona?</h2>
+    <ol class="service-list">
+      <li><strong>1.</strong> Elige el tipo de pago según lo que acordamos.</li>
+      <li><strong>2.</strong> Haz clic en el botón — serás redirigido a Stripe.</li>
+      <li><strong>3.</strong> Completa el pago con tarjeta.</li>
+      <li><strong>4.</strong> Recibirás un recibo por email inmediatamente.</li>
+      <li><strong>5.</strong> Nosotros confirmamos y continuamos con tu servicio.</li>
+    </ol>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="disclaimer">Enrique Gozzer is an Enrolled Agent enrolled to practice before the Internal Revenue Service. Latino Tax Service does not provide legal advice.</div>
+    <p style="margin-top:0.85rem; color:#7AA0D9; font-size:0.75rem;">© <span id="year">2025</span> Latino Tax Service.</p>
+  </div>
+</footer>
+
+<script src="js/i18n.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
